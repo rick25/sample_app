@@ -108,6 +108,30 @@ Things you may want to cover:
 				Gems in the group production were not installed.
 				Use `bundle show [gemname]` to see where a bundled gem is installed.
 
+-Modifico el archivo gitignore asi :
+			# Ignore bundler config.
+			/.bundle
+
+			# Ignore the default SQLite database.
+			/db/*.sqlite3
+			/db/*.sqlite3-journal
+
+			# Ignore all logfiles and tempfiles.
+			/log/*.log
+			/tmp
+
+			# Ignore other unneeded files.
+			database.yml
+			doc/
+			*.swp
+			*~
+			.project
+			.DS_Store
+			.idea
+			.secret
+-Verificar que se creo el archivo llamado config/initializer/secret_token.rb (ESTE PASO ME FALLO)
+
+
 -Ahora ejecuto desde terminal para actualizar las gemas instaladas :
 			bundle update
 
@@ -183,6 +207,11 @@ Things you may want to cover:
 			      create  spec
 			      create  spec/spec_helper.rb
  
+ -Ahora inicializo un repositorio git :
+ 			git init
+ 			git add .
+ 			git commit -m "Commit Inicial"
+
  -
 
 * Ruby version
